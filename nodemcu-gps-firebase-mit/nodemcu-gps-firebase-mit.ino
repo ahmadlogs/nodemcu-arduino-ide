@@ -38,7 +38,8 @@ FirebaseJson json;
 //-----------------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------------
-//GPS RX to D1 & GPS TX to D2 and Serial Connection
+//GPS Module RX pin to NodeMCU D1
+//GPS Module TX pin to NodeMCU D2
 const int RXPin = 4, TXPin = 5;
 SoftwareSerial neo6m(RXPin, TXPin);
 TinyGPSPlus gps;
