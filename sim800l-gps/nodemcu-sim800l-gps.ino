@@ -106,6 +106,7 @@ void parseData(String buff){
           sendLocation();
         }
       }
+      else {Serial.println(String(senderNumber)+": Phone not registered");}
     }
   //-----------------------------------------------------
   }
@@ -189,6 +190,7 @@ void sendLocation()
     Serial.println("GPS Location SMS Sent Successfully.");
     //*/
   }
+  else {Serial.println("Invalid GPS data");}
   //-----------------------------------------------------------------
 }
 //MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
